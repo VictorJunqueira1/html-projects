@@ -1,4 +1,4 @@
-:root{
+:root {
     --background: #fff;
     ---foreground: #6e07f3;
     --primary: #141c3a;
@@ -17,11 +17,25 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 62.5%;   
+    font-size: 62.5%;
 }
 
 .container {
     width: 100%;
     max-width: 1200px;
     margin: auto;
+}
+
+.button {
+    display: inline-block;
+    border: 0.2rem solid var(---foreground);
+    color: var(---foreground);
+    border-radius: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    transition: all ease .2s;
+}
+
+.button:hover {
+    background-color: var(---foreground);
+    color: var(--primary-foreground);
 }
