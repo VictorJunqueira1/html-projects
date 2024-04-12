@@ -22,7 +22,7 @@
     flex-direction: column;
     gap: 4rem;
     align-items: center;
-    box-shadow: 0 5px rgba(0, 0, 0, .5);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
 }
 
 .cta .area-side {
