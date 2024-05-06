@@ -34,6 +34,29 @@ body {
     margin: auto;
 }
 
+.button,
+.button2 {
+    display: inline-block;
+    background-color: var(--secondary);
+    border: 2px solid var(--secondary);
+    color: var(--secondary-foreground);
+    padding: 2rem 4rem;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: all ease-in-out .5s;
+}
+
+.button2 {
+    background-color: var(--background);
+    color: var(--secondary);
+}
+
+.button:hover,
+.button2:hover {
+    opacity: 0.8;
+}
+
 header {
     position: sticky;
     inset: 0 0 auto 0;
@@ -146,6 +169,37 @@ header nav a.bold {
     font-weight: bold;
 }
 
+.hero {
+    background-image: url('../images/hero-center.png');
+    background-size: auto 40rem;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-color: var(--hero-foreground);
+}
+
+.hero .box {
+    padding: 4rem 2rem 28rem 2rem;
+    max-width: 60rem;
+}
+
+.hero h1 {
+    font-family: "Grandstander", sans-serif;
+    font-weight: bold;
+    letter-spacing: -0.1rem;
+    font-size: 5rem;
+    line-height: 6rem;
+}
+
+.hero h1 span {
+    color: var(--secondary);
+}
+
+.hero h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 3rem 0;
+}
+
 @media (width > 900px) {
     header .menu-opener {
         display: none;
@@ -164,5 +218,14 @@ header nav a.bold {
     header nav ul {
         flex-direction: row;
         padding-bottom: 0;
+    }
+
+    .hero {
+        background-image: url('../images/hero.png');
+        background-size: auto;
+    }
+
+    .hero .box {
+        padding: 15rem 2rem;
     }
 }
